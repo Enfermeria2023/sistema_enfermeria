@@ -103,7 +103,6 @@ class EstudianteController extends Controller
      */
     public function update(Request $request, Estudiante $estudiante)
     {
-        request()->validate(Estudiante::$rules);
 
         $estudiante->update($request->all());
 
